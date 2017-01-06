@@ -1,0 +1,15 @@
+<div class="container text-center">
+
+<h1><%= @cat.name %></h1>
+
+  <br>
+  <%= image_tag(@cat.image_uri, height: "300") %>
+  <br> <br>
+  <p>Votes: <%= @cat.votes %></p>
+  <br>
+   <br>
+
+  <%= link_to "Back", cats_path %>
+</div>
+
+

@@ -10,6 +10,40 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require rails_bootstrap_forms
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  padding-top: 30px;
+}
+
+.nav_logo {
+  margin-bottom: 0;
+  color: grey;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.get_started {
+  color: coral;
+}
+
+.nav_links {
+  letter-spacing: 2px;
+  color: grey;
+}
+
+// .nav_links a {
+//   color: grey;
+// }

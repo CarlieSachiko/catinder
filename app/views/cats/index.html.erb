@@ -1,0 +1,23 @@
+
+<div class="container text-center">
+
+    <div class="row text-center cats">
+  <% @cats.each do |cat| %>
+
+        <div class="col-md-6 col-sm-12 hero-feature">
+          <div class="thumbnail">
+            <%= image_tag(cat.image_uri, height: "100", width: "200", class: "cat_pic") %><br>
+            <div class="caption">
+              <strong><%= cat.name %></strong>
+              <p>Votes: <%= cat.votes %></p><br>
+              <%= link_to "More Info", cat_path(cat) %><br>
+           </div>
+          </div>
+        </div>
+
+  <% end %>
+    </div>
+
+  <br>
+</div>
+

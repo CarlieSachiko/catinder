@@ -1,0 +1,24 @@
+<div class="container text-center">
+  <br>
+    <br>
+      <br>
+
+  <%= form_for @cat do |cat| %>
+    <div>
+      <%= cat.label :name %>
+      <%= cat.text_field :name %>
+    </div>
+  <br>
+    <div>
+      <%= cat.label :image_uri %>
+      <%= cat.text_field :image_uri %>
+    </div>
+  <br>
+    <%= cat.submit "Create Profile" %>
+
+  <% end %>
+
+  <br><br>
+
+  <%= link_to "Back", home_path %>
+</div>
